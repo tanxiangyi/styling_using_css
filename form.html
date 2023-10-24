@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body style="background-color: #e9dbf9;">
+<h1 style="color: white;">My Profile</h1>
+<br>
+<a href="profile.html">Profile</a> |
+<a href="http://www.psp.edu.my/pspweb/index.php?lang=en" target="_blank">Website PSP</a>
+</body>
+
+<header>
+	<marquee width ="60%"><h2><i>Welcome to my website</i></h2></marquee>
+</header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="profile.html">Profile</a></li>
+		<li><a href="http://www.psp.edu.my/pspweb/index.php?lang=en" target="_blank">Website PSP</a></li>
+		<li><a href="form.html">Contact Us</a></li>
+	</ul>
+</nav>
+
+    <body>
+        <h2>Borang Pendaftaran</h2>
+        <form action ="https://dev.jtmkpsp.my/process.php" method="POST" enctype="multipart/form-data">
+            <p>
+                <label for="name">Name Peserta</label>
+                <input type="text" name="name" id="name">
+            </p>
+
+            <p>
+                <label for="emel">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+
+            <p>
+                <label for="phone">Nombor Telefon</label>
+                <input type="text" name="nombor_telefon" id="nombor_telefon">
+            </p>
+
+            <p>
+                <label for="address">Alamat Rumah</label>
+                <textarea name="address" id="address"></textarea>
+            </p>
+
+            <p>
+                <label for="status_pelajar">Status Pelajar</label>
+                <select name="status" id="status">
+                <option value="">--- Sila Pilih ---</option>
+                <option value="Aktif">Aktif</option>
+                <option value="Tidak Aktif">Tidak Aktif</option>
+            </select>
+            </p>
+
+            <p>
+                <label for="Jantina">Jantina:</label>
+                <input type="radio" name="Jantina" id="Jantina" value="Lelaki">Lelaki
+                <input type="radio" name="Jantina" id="Jantina" value="Perempuan">Perempuan
+            </p>
+
+            <p>
+                <label for="Skill">Kemahiran:</label>
+                <input type="checkbox" name="Skill[]" id="Skill[]" value="HTML">HTML
+                <input type="checkbox" name="Skill[]" id="Skill[]" value="CSS">CSS
+                <input type="checkbox" name="Skill[]" id="Skill[]" value="PHP">PHP
+            </p>
+
+            <p>
+                <label for="dp">Gambar Profile</label>
+                <input type="file" name="gambar_profile" id="gambar_profile">
+            </p>
+
+            <input type="hidden" name="roles" ide="roles" value="admin">
+
+            <p>
+                <label for="katalaluan">Kata Laluan</label>
+                <input type="password" name="katalaluan" id="katalaluan">
+            </p>
+
+            <p>
+                <button type="submit">Hantar</button> &nbsp;
+                <button type="reset">Kosongkan</button>
+                <button></button>
+            </p>
+        </form>
+    </body>
+
+    <footer>
+        xiangyi 2023
+    </footer>
+
+</html>
